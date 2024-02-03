@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<keyboard version="1">
+    <commands>
+        <key command="SwitchColors" shortcut="X" removed="true" />
+    </commands>
+    <tools>
+        <key tool="pencil" shortcut="B" removed="true" />
+        <key tool="pencil" shortcut="X" />
+        <key tool="eraser" shortcut="E" removed="true" />
+        <key tool="eraser" shortcut="C" />
+        <key tool="eyedropper" shortcut="I" removed="true" />
+        <key tool="eyedropper" shortcut="V" />
+    </tools>
+    <quicktools />
+    <actions />
+    <wheel />
+</keyboard>
