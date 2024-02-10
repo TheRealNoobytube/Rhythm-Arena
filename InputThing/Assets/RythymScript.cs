@@ -7,27 +7,11 @@ public class RythymScript : MonoBehaviour
 {
     
 
-
-    struct Prompt
-    {
-        public float time;
-        public string input;
-    }
-
-    Prompt[] prompts = 
-    {
-        new Prompt { time = 4, input = "j"},
-        new Prompt { time = 6, input = "k"},
-        new Prompt { time = 8, input = "j"},
-        new Prompt { time = 10, input = "k"},
-    };
-
-
     public GameObject canvas;
-    public GameObject promptprefab;
+    public GameObject promptPrefab;
 
 
-    float timePast = 0;
+    float timePassed = 0;
 
     int promptnumber = 0;
 
@@ -41,15 +25,27 @@ public class RythymScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timePast += Time.deltaTime;
+        timePassed += Time.deltaTime;
 
-        if (timePast >= prompts[promptnumber].time - 3) 
+        //Check that prmopt array is within bounds AND check if enough time has passed to create next prompt 
+        while (promptnumber < PromptList.prompts.Length && timePassed >= PromptList.prompts[promptnumber].time - 3) 
         {
-            GameObject promptobj = Instantiate( promptprefab, canvas.transform);
+            //Create instance of promopt in scene
+            GameObject promptInstance = Instantiate( promptPrefab, canvas.transform);
 
-            promptobj.transform.GetChild(0).gameObject.SetActive(false);
+            //Change prompt text
+            promptInstance.transform.GetChild(0).GetComponent<TMP_Text>().text = PromptList.prompts[promptnumber].input;
+
+            //Move prompt down
+            promptInstance.transform.Translate(new Vector3(0, -PromptList.prompts[promptnumber].rowNum) * 2.5f, 0);
 
             promptnumber++;
         }
+
+
+
     }
+
+
+
 }
