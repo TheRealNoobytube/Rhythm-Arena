@@ -6,9 +6,9 @@ using UnityEngine;
 public class PlayerAttacks : MonoBehaviour
 {
     Rigidbody2D rb;
-    public float moveSpeed = 3.0f;
-    public float moveSpeedDouble = 5.0f;
-    public float moveSpeedTriple = 8.0f;
+    public float moveSpeed = 2.0f;
+    public float moveSpeedDouble = 3.0f;
+    public float moveSpeedTriple = 3.5f;
     public float jumpSpeed = 7.0f;
     public float leeway = 0.1f;
 
