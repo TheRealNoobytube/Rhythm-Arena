@@ -7,15 +7,21 @@ using UnityEngine.UI;
 
 public class PromptController : MonoBehaviour
 {
+    bool debug = true;
 
     public GameObject canvas;
     public Animator animator;
+  
     public float targetTime;
     public float timePassed;
     public string keyPress;
     public bool canHit = false;
     public bool rotate = false;
-    const float perfectRange = 0f;
+    const float correction = 0.1f;
+    const float perfectRange = -1.08f;
+    const float midRange = 0.15f;
+    const float edgeRange = 0.3f;
+
 
     bool missed = false;
 
@@ -23,11 +29,27 @@ public class PromptController : MonoBehaviour
     static float lastPressTimeK;
     static float lastPressTimeL;
 
+    SpriteRenderer enabledPrompt;
     // Start is called before the first frame update
     void Start()
     {
         targetTime -= perfectRange;
         gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "";
+
+        if (keyPress.ToLower() == "j")
+        {
+            enabledPrompt = gameObject.transform.Find("JPrompt").GetComponent<SpriteRenderer>();
+        }
+        else if (keyPress.ToLower() == "k")
+        {
+            enabledPrompt = gameObject.transform.Find("KPrompt").GetComponent<SpriteRenderer>();
+        }
+        else if (keyPress.ToLower() == "l")
+        {
+            enabledPrompt = gameObject.transform.Find("LPrompt").GetComponent<SpriteRenderer>();
+        }
+
+        enabledPrompt.enabled = true;
     }
 
     // Update is called once per frame
@@ -35,23 +57,27 @@ public class PromptController : MonoBehaviour
     {
         timePassed += Time.deltaTime;
 
+        if (debug)
+        {
+            if (timePassed >= targetTime - 0.1f && timePassed <= targetTime + 0.1f - correction)
+            {
+                gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Perfect";
+            }
+            else if (timePassed >= targetTime - midRange && timePassed <= targetTime + midRange - correction)
+            {
+                gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Great";
+            }
+            else if (timePassed >= targetTime - edgeRange && timePassed <= targetTime + edgeRange - correction)
+            {
+                gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Okay";
+            }
+            else
+            {
+                gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "L";
+            }
 
-        /*        if (timePassed >= targetTime - 0.1f && timePassed <= targetTime + 0.1f)
-                {
-                   gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Perfect";
-                }
-                else if (timePassed >= targetTime - 0.2f && timePassed <= targetTime + 0.2f)
-                {
-                    gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Great";
-                }
-                else if (timePassed >= targetTime - 0.4f && timePassed <= targetTime + 0.4f)
-                {
-                    gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Okay";
-                }
-                else
-                {
-                    gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "L";
-                }*/
+        }
+
 
         //Button is good
         if (!missed)
@@ -79,11 +105,10 @@ public class PromptController : MonoBehaviour
         }
 
 
-
-
         if (!missed){
-            if (timePassed > targetTime + 0.4f)
+            if (timePassed > targetTime + edgeRange)
             {
+                enabledPrompt.color = new Color(0.355f, 0.355f, 0.355f, 1);
                 canvas.GetComponent<RythymScript>().multiplier = 0;
                 missed = true;
 
@@ -102,7 +127,6 @@ public class PromptController : MonoBehaviour
         if (rotate)
         {
             transform.Translate(new Vector3(-(Screen.width / 200) * Time.deltaTime, 0, 0));
-            
 
         }
         else
@@ -116,24 +140,24 @@ public class PromptController : MonoBehaviour
     {
         bool deleteObject = true;
         //add some leeway so they dont have to be frame perfect
-        if (timePassed >= targetTime - 0.1f && timePassed <= targetTime + 0.1f)
+        if (timePassed >= targetTime - 0.1f && timePassed <= targetTime + 0.1f - correction)
         {
             canvas.GetComponent<RythymScript>().score += 100f;
         }
-        else if (timePassed >= targetTime - 0.2f && timePassed <= targetTime + 0.2f)
+        else if (timePassed >= targetTime - midRange && timePassed <= targetTime + midRange - correction)
         {
             canvas.GetComponent<RythymScript>().score += 50f;
         }
-        else if (timePassed >= targetTime - 0.4f && timePassed <= targetTime + 0.4f)
+        else if (timePassed >= targetTime - edgeRange && timePassed <= targetTime + edgeRange - correction)
         {
             canvas.GetComponent<RythymScript>().score += 10f;
         }
 
-        if (timePassed < targetTime - 0.4f || timePassed > targetTime + 0.4f)
+        if (timePassed < targetTime - edgeRange || timePassed > targetTime + edgeRange - correction)
         {
             missed = true;
             deleteObject = false;
-            GetComponent<Image>().color = new Color(0.355f, 0.355f, 0.355f, 1);
+            enabledPrompt.color = new Color(0.355f, 0.355f, 0.355f, 1);
             canvas.GetComponent<RythymScript>().multiplier = 0;
         }
         else

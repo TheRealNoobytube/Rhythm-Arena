@@ -30,6 +30,9 @@ public class RythymScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        redLine.transform.Find("JKey").transform.position = redLine.transform.position + new Vector3((0 * 2.5f) - 3f, 0, 0);
+        redLine.transform.Find("KKey").transform.position = redLine.transform.position + new Vector3((1 * 2.5f) - 3f, 0, 0);
+        redLine.transform.Find("LKey").transform.position = redLine.transform.position + new Vector3((2 * 2.5f) - 3f, 0, 0);
     }
 
     // Update is called once per frame
@@ -66,7 +69,7 @@ public class RythymScript : MonoBehaviour
             }
             else
             {
-                promptInstance.transform.Translate(new Vector3(0, (Screen.width / 200) * 1.0f, 0));
+                promptInstance.transform.Translate(new Vector3(0, (Screen.width / 200) * 2f, 0));
                 promptInstance.GetComponent<PromptController>().rotate = false;
                 promptInstance.transform.Translate(new Vector3(((PromptList.prompts[promptnumber].rowNum) * 2.5f) - 3f, 0, 0));
             }
