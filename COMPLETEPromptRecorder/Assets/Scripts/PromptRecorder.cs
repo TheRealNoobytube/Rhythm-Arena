@@ -4,9 +4,9 @@ using UnityEngine;
 using System.IO;
 using System;
 
+
 public class PromptRecorder : MonoBehaviour
 {
-
     List<string> lines = new List<string>();
 
     float timePassed = 0f;
@@ -26,14 +26,17 @@ public class PromptRecorder : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J)) 
         {
             lines.Add("new Prompt { time = " + timePassed + "f, input = \"j\", rowNum = 0},");
+            
         }
         if (Input.GetKeyDown(KeyCode.K))
         {
             lines.Add("new Prompt { time = " + timePassed + "f, input = \"k\", rowNum = 1},");
+           ;
         }
         if (Input.GetKeyDown(KeyCode.L))
         {
             lines.Add("new Prompt { time = " + timePassed + "f, input = \"l\", rowNum = 2},");
+           
         }
 
 

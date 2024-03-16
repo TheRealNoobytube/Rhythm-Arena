@@ -1,0 +1,556 @@
+fileFormatVersion: 2
+guid: e06671417d6b3fe40a3589469f5a0d5b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: boss charge (attacks 2)_Frame_0
+    originalName: 
+    pivot: {x: -0.24999996, y: -0.28712872}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 4
+      width: 96
+      height: 101
+    spriteID: 167db88f28f2e6a45832c6009e9e124c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -88, y: -25}
+  - name: boss charge (attacks 2)_Frame_1
+    originalName: 
+    pivot: {x: -0.24999996, y: -0.28712872}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 113
+      width: 96
+      height: 101
+    spriteID: ddf8a0bdb815fb743bc49ac7705a1e36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -88, y: 84}
+  - name: boss charge (attacks 2)_Frame_2
+    originalName: 
+    pivot: {x: -0.3033709, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 222
+      width: 89
+      height: 97
+    spriteID: f1390608c001c6a46a74f47490309118
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -91, y: 189}
+  - name: boss charge (attacks 2)_Frame_3
+    originalName: 
+    pivot: {x: -0.3033709, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 327
+      width: 89
+      height: 97
+    spriteID: bea501227050e9a43979888559706f13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -91, y: 294}
+  - name: boss charge (attacks 2)_Frame_4
+    originalName: 
+    pivot: {x: -0.3255813, y: -0.36842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 4
+      width: 86
+      height: 95
+    spriteID: 954838bbe59652249b5b646d35807cba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 12, y: -31}
+  - name: boss charge (attacks 2)_Frame_5
+    originalName: 
+    pivot: {x: -0.3255813, y: -0.36842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 107
+      width: 86
+      height: 95
+    spriteID: 5826b28dd1590b947b933ac7de980909
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 12, y: 72}
+  - name: boss charge (attacks 2)_Frame_6
+    originalName: 
+    pivot: {x: -0.3255813, y: -0.36842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 210
+      width: 86
+      height: 95
+    spriteID: 5ce80b4571250074bb4293430e60f80e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 12, y: 175}
+  - name: boss charge (attacks 2)_Frame_7
+    originalName: 
+    pivot: {x: -0.39506182, y: -0.36842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 344
+      width: 81
+      height: 95
+    spriteID: f3569c8600fb32d42ac12edfa3045850
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -188, y: 309}
+  - name: boss charge (attacks 2)_Frame_8
+    originalName: 
+    pivot: {x: -0.39506182, y: -0.36842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 294
+      y: 4
+      width: 81
+      height: 95
+    spriteID: 300fbeae1633b2a42a20c6fdc103d4a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: -31}
+  - name: boss charge (attacks 2)_Frame_9
+    originalName: 
+    pivot: {x: -0.4303797, y: -0.36842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 294
+      y: 107
+      width: 79
+      height: 95
+    spriteID: 901bb595a4c48684e8a3fbfc5f7f34b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 100, y: 72}
+  - name: boss charge (attacks 2)_Frame_10
+    originalName: 
+    pivot: {x: -0.4124999, y: -0.3131313}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 131
+      width: 80
+      height: 99
+    spriteID: f6574cba25218e94c8fad67252f03778
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -189, y: 100}
+  - name: boss charge (attacks 2)_Frame_11
+    originalName: 
+    pivot: {x: -0.4124999, y: -0.32653064}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 238
+      width: 80
+      height: 98
+    spriteID: 5cf7ecf14be63484a899f6c9e5f61918
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -189, y: 206}
+  - name: boss charge (attacks 2)_Frame_12
+    originalName: 
+    pivot: {x: -0.39285704, y: -0.09243698}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 84
+      height: 119
+    spriteID: 101e22c3c5b9f5847a960626a7c999f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -189, y: -7}
+  - name: boss charge (attacks 2)_Frame_13
+    originalName: 
+    pivot: {x: -0.39285704, y: -0.36842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 313
+      width: 84
+      height: 95
+    spriteID: 311d22edb2bc8f6478e8da0943a740fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7, y: 278}
+  - name: boss charge (attacks 2)_Frame_14
+    originalName: 
+    pivot: {x: -0.5066666, y: -0.36842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 294
+      y: 210
+      width: 75
+      height: 95
+    spriteID: 4cc7cb580ed1b5645b107eb1a8a16f76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 294, y: 210}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1433340143
+    name: boss charge (attacks 2)
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: boss charge (attacks 2)_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: 167db88f28f2e6a45832c6009e9e124c
+    - name: boss charge (attacks 2)_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: ddf8a0bdb815fb743bc49ac7705a1e36
+    - name: boss charge (attacks 2)_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: f1390608c001c6a46a74f47490309118
+    - name: boss charge (attacks 2)_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: bea501227050e9a43979888559706f13
+    - name: boss charge (attacks 2)_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: 954838bbe59652249b5b646d35807cba
+    - name: boss charge (attacks 2)_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: 5826b28dd1590b947b933ac7de980909
+    - name: boss charge (attacks 2)_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: 5ce80b4571250074bb4293430e60f80e
+    - name: boss charge (attacks 2)_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: f3569c8600fb32d42ac12edfa3045850
+    - name: boss charge (attacks 2)_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: 300fbeae1633b2a42a20c6fdc103d4a5
+    - name: boss charge (attacks 2)_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: 901bb595a4c48684e8a3fbfc5f7f34b3
+    - name: boss charge (attacks 2)_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: f6574cba25218e94c8fad67252f03778
+    - name: boss charge (attacks 2)_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: 5cf7ecf14be63484a899f6c9e5f61918
+    - name: boss charge (attacks 2)_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: 101e22c3c5b9f5847a960626a7c999f5
+    - name: boss charge (attacks 2)_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 160
+      spriteId: 311d22edb2bc8f6478e8da0943a740fc
+    - name: boss charge (attacks 2)_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 198
+        y: 35
+        width: 75
+        height: 95
+      spriteId: 4cc7cb580ed1b5645b107eb1a8a16f76
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 320, y: 160}

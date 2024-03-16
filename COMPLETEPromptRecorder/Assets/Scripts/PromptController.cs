@@ -7,7 +7,9 @@ using UnityEngine.UI;
 
 public class PromptController : MonoBehaviour
 {
+
     public GameObject canvas;
+    public Animator animator;
     public float targetTime;
     public float timePassed;
     public string keyPress;
@@ -34,22 +36,22 @@ public class PromptController : MonoBehaviour
         timePassed += Time.deltaTime;
 
 
-/*        if (timePassed >= targetTime - 0.1f && timePassed <= targetTime + 0.1f)
-        {
-           gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Perfect";
-        }
-        else if (timePassed >= targetTime - 0.2f && timePassed <= targetTime + 0.2f)
-        {
-            gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Great";
-        }
-        else if (timePassed >= targetTime - 0.4f && timePassed <= targetTime + 0.4f)
-        {
-            gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Okay";
-        }
-        else
-        {
-            gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "L";
-        }*/
+        /*        if (timePassed >= targetTime - 0.1f && timePassed <= targetTime + 0.1f)
+                {
+                   gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Perfect";
+                }
+                else if (timePassed >= targetTime - 0.2f && timePassed <= targetTime + 0.2f)
+                {
+                    gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Great";
+                }
+                else if (timePassed >= targetTime - 0.4f && timePassed <= targetTime + 0.4f)
+                {
+                    gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "Okay";
+                }
+                else
+                {
+                    gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "L";
+                }*/
 
         //Button is good
         if (!missed)
@@ -58,17 +60,22 @@ public class PromptController : MonoBehaviour
             {
                 lastPressTimeJ = Time.time;
                 checkTiming();
+                animator.SetTrigger("Attack");
+                
             }
             else if (Input.GetKeyDown(KeyCode.K) && keyPress.ToLower() == "k" && Time.time > lastPressTimeK)
             {
                 lastPressTimeK = Time.time;
                 checkTiming();
+                animator.SetTrigger("Attack");
             }
             else if (Input.GetKeyDown(KeyCode.L) && keyPress.ToLower() == "l" && Time.time > lastPressTimeL)
             {
                 lastPressTimeL = Time.time;
                 checkTiming();
+                animator.SetTrigger("Attack");
             }
+            
         }
 
 
@@ -79,7 +86,8 @@ public class PromptController : MonoBehaviour
             {
                 canvas.GetComponent<RythymScript>().multiplier = 0;
                 missed = true;
-               
+
+                /*animator.SetBool("isAttacking", false);*/
             }
         }
 

@@ -13,6 +13,7 @@ public class RythymScript : MonoBehaviour
     public float score = 0;
     public float multiplier = 0;
 
+    public Animator animator;
     public GameObject redLine;
     public GameObject canvas;
     public GameObject promptPrefab;
@@ -48,6 +49,7 @@ public class RythymScript : MonoBehaviour
             //Create instance of prompt in scene
             GameObject promptInstance = Instantiate(promptPrefab, redLine.transform.position, canvas.transform.rotation, canvas.transform);
             promptInstance.GetComponent<PromptController>().canvas = canvas;
+            promptInstance.GetComponent<PromptController>().animator = animator;
             promptInstance.GetComponent<PromptController>().targetTime = PromptList.prompts[promptnumber].time;
             promptInstance.GetComponent<PromptController>().keyPress = PromptList.prompts[promptnumber].input;
             promptInstance.GetComponent<PromptController>().timePassed = timePassed;

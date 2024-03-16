@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 388c7653f168d0f4381c1111696bc859
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: boss attacks (1)_Frame_0
+    originalName: 
+    pivot: {x: -0.24999996, y: -0.28712872}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 277
+      y: 214
+      width: 96
+      height: 101
+    spriteID: 45c73398f191ca94a8a1b65e74b4f3d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 277, y: 214}
+  - name: boss attacks (1)_Frame_1
+    originalName: 
+    pivot: {x: -0.24999996, y: -0.28712872}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 277
+      y: 323
+      width: 96
+      height: 101
+    spriteID: 0ca0615c3ad9bfe408c92c798d017c6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 277, y: 323}
+  - name: boss attacks (1)_Frame_2
+    originalName: 
+    pivot: {x: -0.1818181, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 277
+      y: 432
+      width: 99
+      height: 97
+    spriteID: 2a411cee9bacdb74a83bc05a82bc5670
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 277, y: 432}
+  - name: boss attacks (1)_Frame_3
+    originalName: 
+    pivot: {x: -0.1818181, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 277
+      y: 537
+      width: 99
+      height: 97
+    spriteID: f55fffb888a23084c9ad1b27cb8847f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 277, y: 537}
+  - name: boss attacks (1)_Frame_4
+    originalName: 
+    pivot: {x: -0.17000008, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 759
+      width: 100
+      height: 97
+    spriteID: e9cbf001e58ba964581c3574a58e8ad9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 759}
+  - name: boss attacks (1)_Frame_5
+    originalName: 
+    pivot: {x: -0.17000008, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 864
+      width: 100
+      height: 97
+    spriteID: a484173f0a584da4894d4ef965368cd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 864}
+  - name: boss attacks (1)_Frame_6
+    originalName: 
+    pivot: {x: -0.15841588, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 549
+      width: 101
+      height: 97
+    spriteID: 07302a565e393a94f9b26725eab3ceff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 549}
+  - name: boss attacks (1)_Frame_7
+    originalName: 
+    pivot: {x: -0.15841588, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 654
+      width: 101
+      height: 97
+    spriteID: 1b36cbe9ad641ab4eb5202e3bc479246
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 654}
+  - name: boss attacks (1)_Frame_8
+    originalName: 
+    pivot: {x: -0.17000008, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 277
+      y: 4
+      width: 100
+      height: 97
+    spriteID: 845df8929ee4a054aac2b3bab65c37e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 277, y: 4}
+  - name: boss attacks (1)_Frame_9
+    originalName: 
+    pivot: {x: -0.17000008, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 277
+      y: 109
+      width: 100
+      height: 97
+    spriteID: 3536a43974e197a4e829ca82fbc25768
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 277, y: 109}
+  - name: boss attacks (1)_Frame_10
+    originalName: 
+    pivot: {x: -0.13592228, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 876
+      width: 103
+      height: 97
+    spriteID: 48d25a9867b3a1c41a034d48b870eea7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 876}
+  - name: boss attacks (1)_Frame_11
+    originalName: 
+    pivot: {x: -0.13592228, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 444
+      width: 103
+      height: 97
+    spriteID: b3659f6d5368e6746828e9ac2f1ac01f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 444}
+  - name: boss attacks (1)_Frame_12
+    originalName: 
+    pivot: {x: -0.11428579, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 666
+      width: 105
+      height: 97
+    spriteID: ad802490f55645341a274886f89eff76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 666}
+  - name: boss attacks (1)_Frame_13
+    originalName: 
+    pivot: {x: -0.124999925, y: -0.34020618}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 771
+      width: 104
+      height: 97
+    spriteID: 526ed8738be326041bcdb8b6a035031d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 771}
+  - name: boss attacks (1)_Frame_14
+    originalName: 
+    pivot: {x: 0.016806707, y: -0.32673267}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 444
+      width: 119
+      height: 101
+    spriteID: 33430f5fd08e0d8419949c48e1f789da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 444}
+  - name: boss attacks (1)_Frame_15
+    originalName: 
+    pivot: {x: -0.0833333, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 553
+      width: 108
+      height: 105
+    spriteID: 8b19555137959e94db99ae48b2a0308f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 553}
+  - name: boss attacks (1)_Frame_16
+    originalName: 
+    pivot: {x: 0.28658536, y: -0.27450982}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 334
+      width: 164
+      height: 102
+    spriteID: dea07963852e97d4bae8e77b331e4304
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 334}
+  - name: boss attacks (1)_Frame_17
+    originalName: 
+    pivot: {x: 0.33898306, y: -0.27450982}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 224
+      width: 177
+      height: 102
+    spriteID: 59b19304de5b6284d9182b831e7532d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 224}
+  - name: boss attacks (1)_Frame_18
+    originalName: 
+    pivot: {x: 0.4481132, y: -0.27450982}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 114
+      width: 212
+      height: 102
+    spriteID: 6f7c1d29c635a5d4890d30e883d0dd3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 114}
+  - name: boss attacks (1)_Frame_19
+    originalName: 
+    pivot: {x: 0.5584906, y: -0.27450982}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 265
+      height: 102
+    spriteID: e43f4e1ca7bfb53458c6efb505b1dfb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -571728996
+    name: boss attacks (1)
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: boss attacks (1)_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 184
+        y: 29
+        width: 96
+        height: 101
+      spriteId: 45c73398f191ca94a8a1b65e74b4f3d7
+    - name: boss attacks (1)_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 184
+        y: 29
+        width: 96
+        height: 101
+      spriteId: 0ca0615c3ad9bfe408c92c798d017c6f
+    - name: boss attacks (1)_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 178
+        y: 33
+        width: 99
+        height: 97
+      spriteId: 2a411cee9bacdb74a83bc05a82bc5670
+    - name: boss attacks (1)_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 178
+        y: 33
+        width: 99
+        height: 97
+      spriteId: f55fffb888a23084c9ad1b27cb8847f6
+    - name: boss attacks (1)_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 177
+        y: 33
+        width: 100
+        height: 97
+      spriteId: e9cbf001e58ba964581c3574a58e8ad9
+    - name: boss attacks (1)_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 177
+        y: 33
+        width: 100
+        height: 97
+      spriteId: a484173f0a584da4894d4ef965368cd8
+    - name: boss attacks (1)_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 176
+        y: 33
+        width: 101
+        height: 97
+      spriteId: 07302a565e393a94f9b26725eab3ceff
+    - name: boss attacks (1)_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 176
+        y: 33
+        width: 101
+        height: 97
+      spriteId: 1b36cbe9ad641ab4eb5202e3bc479246
+    - name: boss attacks (1)_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 177
+        y: 33
+        width: 100
+        height: 97
+      spriteId: 845df8929ee4a054aac2b3bab65c37e1
+    - name: boss attacks (1)_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 177
+        y: 33
+        width: 100
+        height: 97
+      spriteId: 3536a43974e197a4e829ca82fbc25768
+    - name: boss attacks (1)_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 174
+        y: 33
+        width: 103
+        height: 97
+      spriteId: 48d25a9867b3a1c41a034d48b870eea7
+    - name: boss attacks (1)_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 174
+        y: 33
+        width: 103
+        height: 97
+      spriteId: b3659f6d5368e6746828e9ac2f1ac01f
+    - name: boss attacks (1)_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 172
+        y: 33
+        width: 105
+        height: 97
+      spriteId: ad802490f55645341a274886f89eff76
+    - name: boss attacks (1)_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 173
+        y: 33
+        width: 104
+        height: 97
+      spriteId: 526ed8738be326041bcdb8b6a035031d
+    - name: boss attacks (1)_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 158
+        y: 33
+        width: 119
+        height: 101
+      spriteId: 33430f5fd08e0d8419949c48e1f789da
+    - name: boss attacks (1)_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 169
+        y: 33
+        width: 108
+        height: 105
+      spriteId: 8b19555137959e94db99ae48b2a0308f
+    - name: boss attacks (1)_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 113
+        y: 28
+        width: 164
+        height: 102
+      spriteId: dea07963852e97d4bae8e77b331e4304
+    - name: boss attacks (1)_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 100
+        y: 28
+        width: 177
+        height: 102
+      spriteId: 59b19304de5b6284d9182b831e7532d9
+    - name: boss attacks (1)_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 65
+        y: 28
+        width: 212
+        height: 102
+      spriteId: 6f7c1d29c635a5d4890d30e883d0dd3d
+    - name: boss attacks (1)_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 12
+        y: 28
+        width: 265
+        height: 102
+      spriteId: e43f4e1ca7bfb53458c6efb505b1dfb1
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 320, y: 160}
