@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b6fb7d6c52dc77e469a7544b023ca138
+guid: da3c603cca120fd4384cebc883ef5868
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6641199635802408475
-    second: UITextBorder_0
+      213: -860720671036606347
+    second: My first design 3_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextBorder_0
+      name: My first design 3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 246
-        height: 50
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b16c476d1e74a2c50800000000000000
-      internalID: 6641199635802408475
+      spriteID: 578f6082c1b1e04f0800000000000000
+      internalID: -860720671036606347
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      UITextBorder_0: 6641199635802408475
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
