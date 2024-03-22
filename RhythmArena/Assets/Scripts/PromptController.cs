@@ -20,8 +20,8 @@ public class PromptController : MonoBehaviour
     public bool rotate = false;
     const float correction = 0.1f;
     const float perfectRange = -1.08f;
-    const float midRange = 0.15f;
-    const float edgeRange = 0.3f;
+    const float midRange = 0.2f;
+    const float edgeRange = 0.4f;
 
 
     bool missed = false;
@@ -150,11 +150,10 @@ public class PromptController : MonoBehaviour
         //popupInstance.transform.SetParent(canvas.GetComponent<RythymScript>().redLine.transform);
 
         //add some leeway so they dont have to be frame perfect
-        if (timePassed >= targetTime - 0.1f && timePassed <= targetTime + 0.1f - correction)
+        if (timePassed >= targetTime - 0.15f && timePassed <= targetTime + 0.15f - correction)
         {
             canvas.GetComponent<RythymScript>().score += 100f;
             popupText.judgement.sprite = popupText.sprites[0];
-            //popupText.text = "Perfect!!";
         }
         else if (timePassed >= targetTime - midRange && timePassed <= targetTime + midRange - correction)
         {
