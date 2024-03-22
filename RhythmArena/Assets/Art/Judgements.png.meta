@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: d6ce78a42fe60df4a9a616e67a75556f
+guid: 04901dee24402384c8ec8775affa7287
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5251741457386673399
-    second: Designer (1)_0
+      213: 4985931200971442308
+    second: Judgements_0
+  - first:
+      213: 6495196418421683536
+    second: Judgements_1
+  - first:
+      213: 7881504722482862064
+    second: Judgements_2
+  - first:
+      213: 242915002362616674
+    second: Judgements_3
+  - first:
+      213: -6247322626683232320
+    second: Judgements_4
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -98,22 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Designer (1)_0
+      name: Judgements_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 54
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 90b664c28f01e17b0800000000000000
-      internalID: -5251741457386673399
+      spriteID: e4258069ac93d5e448fd9a6edd468304
+      internalID: -1303298763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Judgements_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb155390fd86674e854f5c38703838d
+      internalID: -43332209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Judgements_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 54
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e088f7d38987cd4089f275615d32c21
+      internalID: 492016126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Judgements_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 54
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d488ea1fb2f5954e857928b148914fd
+      internalID: -130816155
       vertices: []
       indices: 
       edges: []
@@ -121,7 +196,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5741cd432af8f974caa5d5dd96b72622
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Designer (1)_0: -5251741457386673399
+      Judgements_0: -1303298763
+      Judgements_1: -43332209
+      Judgements_2: 492016126
+      Judgements_3: -130816155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

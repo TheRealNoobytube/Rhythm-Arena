@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class PromptController : MonoBehaviour
 {
-    bool debug = true;
+
+    bool debug = false;
 
     public GameObject canvas;
     public Animator animator;
@@ -139,18 +140,31 @@ public class PromptController : MonoBehaviour
     public void checkTiming()
     {
         bool deleteObject = true;
+
+        Object popupPrefabPath = Resources.Load("Prefabs/judgementText");
+        GameObject popupInstance = Instantiate(popupPrefabPath , canvas.transform) as GameObject;
+        popupInstance.transform.position += new Vector3(-3, 0, 0);
+        JudgementPopup popupText = popupInstance.GetComponent<JudgementPopup>();
+
+
+        //popupInstance.transform.SetParent(canvas.GetComponent<RythymScript>().redLine.transform);
+
         //add some leeway so they dont have to be frame perfect
         if (timePassed >= targetTime - 0.1f && timePassed <= targetTime + 0.1f - correction)
         {
             canvas.GetComponent<RythymScript>().score += 100f;
+            popupText.judgement.sprite = popupText.sprites[0];
+            //popupText.text = "Perfect!!";
         }
         else if (timePassed >= targetTime - midRange && timePassed <= targetTime + midRange - correction)
         {
             canvas.GetComponent<RythymScript>().score += 50f;
+            popupText.judgement.sprite = popupText.sprites[1];
         }
         else if (timePassed >= targetTime - edgeRange && timePassed <= targetTime + edgeRange - correction)
         {
             canvas.GetComponent<RythymScript>().score += 10f;
+            popupText.judgement.sprite = popupText.sprites[2];
         }
 
         if (timePassed < targetTime - edgeRange || timePassed > targetTime + edgeRange - correction)
@@ -159,6 +173,8 @@ public class PromptController : MonoBehaviour
             deleteObject = false;
             enabledPrompt.color = new Color(0.355f, 0.355f, 0.355f, 1);
             canvas.GetComponent<RythymScript>().multiplier = 0;
+
+            popupText.judgement.sprite = popupText.sprites[3];
         }
         else
         {

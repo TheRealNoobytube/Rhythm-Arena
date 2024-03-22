@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RhythmArenaMenuBackgroundOption2_0: 2626966453496483771
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
