@@ -143,12 +143,12 @@ public class PromptController : MonoBehaviour
 
         if (rotate)
         {
-            transform.Translate(new Vector3(-(Screen.width / 200) * Time.deltaTime, 0, 0));
+            transform.Translate(new Vector3(-5.5f * Time.deltaTime, 0, 0));
 
         }
         else
         {
-            transform.Translate(new Vector3(0, -(Screen.width / 200) * Time.deltaTime, 0));
+            transform.Translate(new Vector3(0, -5.5f * Time.deltaTime, 0));
         }
         
     }
