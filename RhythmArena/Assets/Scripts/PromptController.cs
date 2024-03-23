@@ -12,7 +12,9 @@ public class PromptController : MonoBehaviour
 
     public GameObject canvas;
     public Animator animator;
-  
+
+    GameObject portal;
+
     public float targetTime;
     public float timePassed;
     public string keyPress;
@@ -31,15 +33,22 @@ public class PromptController : MonoBehaviour
     static float lastPressTimeL;
 
     SpriteRenderer enabledPrompt;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+
+        portal = GameObject.FindWithTag("portal");
+
         targetTime -= perfectRange;
         gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = "";
 
         if (keyPress.ToLower() == "j")
         {
             enabledPrompt = gameObject.transform.Find("JPrompt").GetComponent<SpriteRenderer>();
+
         }
         else if (keyPress.ToLower() == "k")
         {
@@ -149,22 +158,33 @@ public class PromptController : MonoBehaviour
 
         //popupInstance.transform.SetParent(canvas.GetComponent<RythymScript>().redLine.transform);
 
+        bool hit = false;
+
         //add some leeway so they dont have to be frame perfect
         if (timePassed >= targetTime - 0.15f && timePassed <= targetTime + 0.15f - correction)
         {
             canvas.GetComponent<RythymScript>().score += 100f;
             popupText.judgement.sprite = popupText.sprites[0];
+            hit = true;
         }
         else if (timePassed >= targetTime - midRange && timePassed <= targetTime + midRange - correction)
         {
             canvas.GetComponent<RythymScript>().score += 50f;
             popupText.judgement.sprite = popupText.sprites[1];
+            hit = true;
         }
         else if (timePassed >= targetTime - edgeRange && timePassed <= targetTime + edgeRange - correction)
         {
             canvas.GetComponent<RythymScript>().score += 10f;
             popupText.judgement.sprite = popupText.sprites[2];
+            hit = true;
         }
+
+        if (hit == true)
+        {
+            portal.transform.localScale += new Vector3(0.1f, 0.08f, 0.0f);
+        }
+
 
         if (timePassed < targetTime - edgeRange || timePassed > targetTime + edgeRange - correction)
         {
