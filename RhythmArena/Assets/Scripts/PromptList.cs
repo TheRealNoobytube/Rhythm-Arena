@@ -16,7 +16,7 @@ public class PromptList : MonoBehaviour
     {
 
 
-        new Prompt { time = 1.09399f, input = "j", rowNum = 0},
+        new Prompt { time = 2f, input = "j", rowNum = 0},
 new Prompt { time = 3.096391f, input = "k", rowNum = 1},
 new Prompt { time = 4.224884f, input = "l", rowNum = 2},
 new Prompt { time = 6.439855f, input = "j", rowNum = 0},

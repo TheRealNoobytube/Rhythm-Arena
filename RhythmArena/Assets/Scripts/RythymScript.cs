@@ -51,13 +51,13 @@ public class RythymScript : MonoBehaviour
         timePassed += Time.deltaTime;
         print(timePassed);
         //Check that prmopt array is within bounds AND check if enough time has passed to create next prompt 
-        while (promptnumber < PromptList.prompts.Length && timePassed >= PromptList.prompts[promptnumber].time - 1.0f)
+        while (promptnumber < PromptList.prompts.Length && timePassed >= PromptList.prompts[promptnumber].time - 2.0f)
         {
             //Create instance of prompt in scene
             GameObject promptInstance = Instantiate(promptPrefab, redLine.transform.position, canvas.transform.rotation, canvas.transform);
             promptInstance.GetComponent<PromptController>().canvas = canvas;
             promptInstance.GetComponent<PromptController>().animator = animator;
-            promptInstance.GetComponent<PromptController>().targetTime = PromptList.prompts[promptnumber].time;
+            promptInstance.GetComponent<PromptController>().targetTime = PromptList.prompts[promptnumber].time - 1.0f;
             promptInstance.GetComponent<PromptController>().keyPress = PromptList.prompts[promptnumber].input;
             promptInstance.GetComponent<PromptController>().timePassed = timePassed;
 
@@ -88,6 +88,8 @@ public class RythymScript : MonoBehaviour
 
             if (finishTimer > 5)
             {
+                scoreText.gameObject.SetActive(false);
+                multiplierText.gameObject.SetActive(false);
                 canvas.transform.Find("Background").gameObject.SetActive(true);
                 canvas.transform.Find("Background").Find("Score").GetComponent<TMP_Text>().text = ("Score: ") + score.ToString();
                 canvas.transform.Find("Background").Find("Streak").GetComponent<TMP_Text>().text = ("Streak: ") + multiplier.ToString();
