@@ -73,7 +73,7 @@ public class RythymScript : MonoBehaviour
             }
             else
             {
-                promptInstance.transform.Translate(new Vector3(0, 5 * 2f, 0));
+                promptInstance.transform.Translate(new Vector3(0, (Screen.width / 200) * 2f, 0));
                 promptInstance.GetComponent<PromptController>().rotate = false;
                 promptInstance.transform.Translate(new Vector3(((PromptList.prompts[promptnumber].rowNum) * 2.5f) - 3f, 0, 0));
             }
