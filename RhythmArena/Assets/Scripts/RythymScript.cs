@@ -26,13 +26,14 @@ public class RythymScript : MonoBehaviour
 
     int promptnumber = 0;
 
-
+    double finishTimer = 0;
     // Start is called before the first frame update
     void Start()
     {
         redLine.transform.Find("JKey").transform.position = redLine.transform.position + new Vector3((0 * 2.5f) - 3f, 0, 0);
         redLine.transform.Find("KKey").transform.position = redLine.transform.position + new Vector3((1 * 2.5f) - 3f, 0, 0);
         redLine.transform.Find("LKey").transform.position = redLine.transform.position + new Vector3((2 * 2.5f) - 3f, 0, 0);
+        canvas.transform.Find("Background").gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -45,7 +46,7 @@ public class RythymScript : MonoBehaviour
         timeText.GetComponent<Text>().text = "Time : " + timePassed.ToString();
 
         timePassed += Time.deltaTime;
-
+        print(timePassed);
         //Check that prmopt array is within bounds AND check if enough time has passed to create next prompt 
         while (promptnumber < PromptList.prompts.Length && timePassed >= PromptList.prompts[promptnumber].time - 1.0f)
         {
@@ -78,7 +79,17 @@ public class RythymScript : MonoBehaviour
             promptnumber++;
         }
 
+        if (promptnumber == PromptList.prompts.Length)
+        {
+            finishTimer += Time.deltaTime;
 
+            if (finishTimer > 5)
+            {
+                promptnumber++;
+                canvas.transform.Find("Background").gameObject.SetActive(true);
+                canvas.transform.Find("Background").Find("Score").GetComponent<TMP_Text>().text = ("Score: ") + score.ToString();
+            }
+        }
 
     }
 
