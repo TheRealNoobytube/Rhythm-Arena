@@ -46,7 +46,7 @@ public class RythymScript : MonoBehaviour
         timeText.GetComponent<Text>().text = "Time : " + timePassed.ToString();
 
         timePassed += Time.deltaTime;
-
+        print(timePassed);
         //Check that prmopt array is within bounds AND check if enough time has passed to create next prompt 
         while (promptnumber < PromptList.prompts.Length && timePassed >= PromptList.prompts[promptnumber].time - 1.0f)
         {
