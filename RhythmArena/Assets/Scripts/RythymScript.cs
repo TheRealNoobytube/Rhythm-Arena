@@ -12,7 +12,7 @@ public class RythymScript : MonoBehaviour
 
     public float score = 0;
     public float multiplier = 0;
-
+    public int misses = 0;
     public Animator animator;
     public GameObject redLine;
     public GameObject canvas;
@@ -27,6 +27,9 @@ public class RythymScript : MonoBehaviour
     int promptnumber = 0;
 
     double finishTimer = 0;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,9 +88,57 @@ public class RythymScript : MonoBehaviour
 
             if (finishTimer > 5)
             {
-                promptnumber++;
                 canvas.transform.Find("Background").gameObject.SetActive(true);
                 canvas.transform.Find("Background").Find("Score").GetComponent<TMP_Text>().text = ("Score: ") + score.ToString();
+                canvas.transform.Find("Background").Find("Streak").GetComponent<TMP_Text>().text = ("Streak: ") + multiplier.ToString();
+                canvas.transform.Find("Background").Find("Misses").GetComponent<TMP_Text>().text = ("Misses: ") + misses.ToString();
+            }
+            if (finishTimer > 7)
+            {
+                canvas.transform.Find("Background").Find("Score").gameObject.SetActive(true);
+                
+            }
+            if (finishTimer > 8)
+            {
+                canvas.transform.Find("Background").Find("Streak").gameObject.SetActive(true);
+            }
+            if (finishTimer > 9)
+            {
+                canvas.transform.Find("Background").Find("Misses").gameObject.SetActive(true);
+            }
+            if (finishTimer > 10)
+            {
+                canvas.transform.Find("Background").Find("RankText").gameObject.SetActive(true);
+            }
+            if (finishTimer > 11)
+            {
+                RankSprites rank = canvas.transform.Find("Background").Find("Rank").GetComponent<RankSprites>();
+
+                if (score > 10000)
+                {
+                    rank.renderer.sprite = rank.sprites[4];
+                }
+
+                else if (score > 8000)
+                {
+                    rank.renderer.sprite = rank.sprites[3];
+                }
+
+                else if (score > 6000)
+                {
+                    rank.renderer.sprite = rank.sprites[2];
+                }
+
+                else if (score > 4000)
+                {
+                    rank.renderer.sprite = rank.sprites[1];
+                }
+
+                else
+                {
+                    rank.renderer.sprite = rank.sprites[0];
+                }
+                canvas.transform.Find("Background").Find("Rank").gameObject.SetActive(true);
             }
         }
 

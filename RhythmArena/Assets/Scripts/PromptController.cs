@@ -120,8 +120,15 @@ public class PromptController : MonoBehaviour
             {
                 enabledPrompt.color = new Color(0.355f, 0.355f, 0.355f, 1);
                 canvas.GetComponent<RythymScript>().multiplier = 0;
+                canvas.GetComponent<RythymScript>().misses++;
                 missed = true;
 
+
+                Object popupPrefabPath = Resources.Load("Prefabs/judgementText");
+                GameObject popupInstance = Instantiate(popupPrefabPath, canvas.transform) as GameObject;
+                popupInstance.transform.position += new Vector3(-3, 0, 0);
+                JudgementPopup popupText = popupInstance.GetComponent<JudgementPopup>();
+                popupText.judgement.sprite = popupText.sprites[3];
                 /*animator.SetBool("isAttacking", false);*/
             }
         }
@@ -192,6 +199,7 @@ public class PromptController : MonoBehaviour
             deleteObject = false;
             enabledPrompt.color = new Color(0.355f, 0.355f, 0.355f, 1);
             canvas.GetComponent<RythymScript>().multiplier = 0;
+            canvas.GetComponent<RythymScript>().misses++;
 
             popupText.judgement.sprite = popupText.sprites[3];
         }
